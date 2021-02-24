@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparações</title>
+    <script>
+     
+     "use strict"
+      
+     let numero = prompt("Informe um número menor que 1000:")
+      
+
+      if(isNaN(numero)){ // O resultado da conversão foi NaN?
+          alert("Desculpe, Isso não é um número")
+      }
+      // JS, um = é usado para atribuição (colocar valor em variável)
+      // Para comparações, precisamos de PELO MENOS 2 sinais de ==
+      else if(numero == 1000){ 
+          alert("Desculpe-me, mas 1000 NÃO É menor que 1000, é igual")
+      }
+      else if(numero < 1000){
+          alert("Parabens, você acertou!")
+      }
+      else{
+          alert("Infelizmente, você não acertou!")
+      }
+          
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
