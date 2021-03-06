@@ -23,30 +23,37 @@
             Efetue o cálculo apropriado de acordo com o operador informado
             e informe o resultado usando document.write().
         */
-         let op = prompt('Informe a operação matemática:')
-         let num1 = prompt('Informe um número:')
-         let num2 = prompt('Informe o segundo número:')
-        
          
-        
-         if(op === '+'){
-             document.write(`${num1} + ${num2} é igual a ${num1 + num2}`)
+         let num1 = prompt('Informe um número:')
+         let  op = prompt('Informe a operação matemática:')
+         let num2 = prompt('Informe o segundo número:')
+         let res
+         
+         if(isNaN(num1) || isNaN(num2)){
+             alert("Informe valores válidos!")
+         }
+
+         else if(op === '+'){
+             res = parseInt(num1) + parseInt(num2)
+             document.write(`${num1} + ${num2} é igual a ${res}`)
          }
          else if(op === '-'){
-            document.write(`${num1} - ${num2} é igual a ${num1 - num2}`)
+            res = parseInt(num1) - parseInt(num2)
+            document.write(`${num1} - ${num2} é igual a ${res}`)
          }
          else if(op === '*' || op === 'x'){
-
-            document.write(`${num1} x ${num2} é igual a ${num1 * num2}`)
+            res = parseInt(num1) * parseInt(num2)
+            document.write(`${num1} x ${num2} é igual a ${res}`)
          }
           else if(op === '/' || op === ':'){
-
-            document.write(`${num1} : ${num2} é igual a ${num1 / num2}`)
+            res = parseInt(num1) / parseInt(num2)
+            document.write(`${num1} / ${num2} é igual a ${res}`)
          }
          else{
               document.write('Valores inválidos!')
          }
-         
+        //switch..case é uma estrutura de decisão que compara uma única variável
+        //contra uma série de valores
         
          
 

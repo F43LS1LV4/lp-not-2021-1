@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparações</title>
+    <script>
+         let num1 = prompt('Informe um número:')
+         let op = prompt('Informe a operação matemática:')
+         let num2 = prompt('Informe o segundo número:')
+         let res
+         
+         if(isNaN(num1) || isNaN(num2)){
+             alert("Informe valores válidos!")
+         }
+
+         else{
+             switch(op){ //case precisa do break
+                 
+                case "+":
+                     res = parseInt(num1) + parseInt(num2)
+                     document.write(`${num1} + ${num2} é igual a ${res}`)
+                     break
+                 
+                 case "-":
+                      res = parseInt(num1) - parseInt(num2)
+                     document.write(`${num1} - ${num2} é igual a ${res}`)   
+                     break 
+
+                 case "/":
+                 case ":" :   
+                     res = parseInt(num1) / parseInt(num2)
+                     document.write(`${num1} / ${num2} é igual a ${res}`)
+                     break
+
+                 case "x":  
+                 case "*":
+                 case "X":
+                     res = parseInt(num1) * parseInt(num2)
+                     document.write(`${num1} x ${num2} é igual a ${res}`)
+                     break 
+                 
+                 default:
+                     alert("Erro!")                  
+             }
+         }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
