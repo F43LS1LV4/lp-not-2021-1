@@ -22,7 +22,29 @@
             * ABRIL, JUNHO, SETEMBRO e NOVEMBRO: 30 dias
             * FEVEREIRO: 28 ou 29 dias (em anos bissextos)
         */
+        let mes = prompt("Informe um mês:")   
+        switch(mes){
+            
+            case "1":
+            case "3":
+            case "5":             
+            case "7":
+            case "8":
+            case "10":
+            case "12":   
+                document.write("O mês informado contém 31 dias")
+                break
 
+            case "4":
+            case "6":
+            case "9":             
+            case "11":          
+                document.write("O mês informado contém 30 dias")
+                break
+            
+            default:
+                document.write("O mês informado é fevereiro e pode ter 28 dias em anos normais, ou 29 dias se for anos bissextos ")
+            }
     </script>
 </head>
 <body>
